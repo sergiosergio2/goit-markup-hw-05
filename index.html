@@ -56,7 +56,7 @@
             <div class="container">
 
                 <h1 class="hero-title">эффективные решения<br> для вашего бизнеса </h1>
-                <button type="button" class="modal-btn">Заказать услугу</button>
+                <button type="button" data-modal-open class="modal-btn">Заказать услугу</button>
 
             </div>
         </section>
@@ -125,11 +125,17 @@
                 <h2 class="skills-title">Чем мы занимаемся</h2>
                 <ul class="skills-list">
                     <li class="skills-img link"><img src="./images/picture/img-1.jpg" width="370" height="294"
-                            alt="рабочий стол спланшетом"></li>
+                            alt="рабочий стол спланшетом">
+                        <p class="skills-overlay">Десктопные приложения</p>
+                    </li>
                     <li class="skills-img link"><img src="./images/picture/img-2.jpg" width="370" height="294"
-                            alt="рабочий стол с ноутбуком"></li>
+                            alt="рабочий стол с ноутбуком">
+                        <p class="skills-overlay">Мобильные приложения</p>
+                    </li>
                     <li class="skills-img link"><img src="./images/picture/img-3.jpg" width="370" height="294"
-                            alt="работа с планшетом"></li>
+                            alt="работа с планшетом">
+                        <p class="skills-overlay">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -345,18 +351,64 @@
     </main>
     <!--ADDRESS-->
     <footer>
-        <div class="container">
-            <p lang="en" class="logo-footer">Web<span class="logo-studio-footer">Studio</span></p>
-            <address class="address">
-                <p class="address-post">г. Киев, пр-т Леси Украинки, 26</p>
-                <a class="address-mail list" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a class="address-tel list" href="tel:+380991111111">+38099 111 11 11</a>
+        <div class="container footer-block">
+            <div class="footer-logo-address">
+                <p lang="en" class="logo-footer">Web<span class="logo-studio-footer">Studio</span></p>
+                <address class="address">
+                    <p class="address-post">г. Киев, пр-т Леси Украинки, 26</p>
+                    <a class="address-mail list" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="address-tel list" href="tel:+380991111111">+38099 111 11 11</a>
 
 
-            </address>
+                </address>
+            </div>
+            <div class="footer-text-link-block">
+                <p class="footer-text">присоединяйтесь</p>
+                <ul class="footer-icon-block link">
+                    <li class="footer-item">
+                        <a class="footer-link list" href="#">
+                            <svg class="footer-icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <svg class="footer-icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <svg class="footer-icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            <svg class="footer-icon">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </footer>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button type="button" data-modal-close class="close-btn">
+                <svg width="18" height="18">
+                    <use href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
