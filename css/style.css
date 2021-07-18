@@ -204,6 +204,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #c4c4c4;
+  background-position: center;
 }
 
 .hero-title {
