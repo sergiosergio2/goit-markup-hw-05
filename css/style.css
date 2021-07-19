@@ -615,6 +615,7 @@ footer {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .modal {
   position: absolute;
   width: 528px;
@@ -708,6 +709,7 @@ footer {
 }
 .client-link {
   display: block;
+  text-decoration: none;
 }
 .client-link:hover .overlay,
 .client-link:focus .overlay {
